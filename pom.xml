@@ -23,13 +23,11 @@
         <artifactId>maven-jar-plugin</artifactId>
         <version>3.0.2</version>
         <configuration>
-          <archive>
-            <manifest>
-              <addClasspath>true</addClasspath>
-              <classpathPrefix>lib/</classpathPrefix>
-              <mainClass>com.mycompany.app.App</mainClass>
-            </manifest>
-          </archive>
+             <rules>
+               <requireMavenVersion>
+                  <version>[3.5.4,)</version>
+               </requireMavenVersion>
+             </rules>
         </configuration>
       </plugin>
     </plugins>
